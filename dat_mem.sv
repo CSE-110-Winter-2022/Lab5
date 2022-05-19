@@ -26,10 +26,6 @@ logic [W-1:0] core[byte_count];
 //  mem write enable (1 bit)
 // memory core contents
 //   operands test bench provides to you
-// [4:55]   = original message (52 characters)
-// [0]     = preamble length   (max 12 characters)
-// [1]     = feedback taps in bits [4:0]   
-// [2]     = LFSR starting state in bits [4:0]
 //   results you provide to the test bench 
 // [128:191] = padded & encrypted message (64 characters)
 
