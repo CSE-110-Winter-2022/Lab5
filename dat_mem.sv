@@ -19,16 +19,6 @@ module dat_mem #(parameter W=8, byte_count=256)(
 // W bits wide [W-1:0] and byte_count registers deep 	 
 logic [W-1:0] core[byte_count];	 
 
-// also memory write address pointer (how many bits?),
-//	read address pointer,
-//  8-bit-wide data in,
-//  8-bit-wide data out,
-//  mem write enable (1 bit)
-// memory core contents
-//   operands test bench provides to you
-//   results you provide to the test bench 
-// [128:191] = padded & encrypted message (64 characters)
-
 // combinational reads from Memory using raddr 
 //TODO
 
