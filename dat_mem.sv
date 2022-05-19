@@ -26,17 +26,16 @@ logic [W-1:0] core[byte_count];
 //  mem write enable (1 bit)
 // memory core contents
 //   operands test bench provides to you
-// [4:52]   = original message (49 characters)
+// [4:55]   = original message (52 characters)
 // [0]     = preamble length   (max 12 characters)
 // [1]     = feedback taps in bits [4:0]   
 // [2]     = LFSR starting state in bits [4:0]
 //   results you provide to the test bench 
-// [128:188] = padded & encrypted message (61 characters)
+// [128:191] = padded & encrypted message (64 characters)
 
 // combinational reads from Memory using raddr 
 //TODO
 
 // sequential (clocked) writes, with enable to prevent accidental overwrites	
-always_ff @ (posedge clk)
-  //TODO
-endmodule
+//TODO
+
