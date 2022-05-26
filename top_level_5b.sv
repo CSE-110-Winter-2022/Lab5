@@ -44,7 +44,7 @@ module top_level_5b(
 				);                   // instantiate data memory
 
 // 6 parallel LFSRs -- fill in the missing connections													  
-	lfsr5b l0(
+	lfsr5 l0(
 				.clk	() , 
 				.en   	()  ,     // 1: advance LFSR on rising clk
 				.init 	(),	      // 1: initialize LFSR
